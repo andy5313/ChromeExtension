@@ -7,9 +7,9 @@
         {
           "matches": ["https://www.youtube.com/*", "https://www.reddit.com/*", "https://www.facebook.com/*", "https://www.instagram.com/*", "https://www.dailymail.com/*", "https://www.dailymail.co.uk/*", "https://www.linkedin.com/*", "https://www.twitter.com/*", "https://www.tiktok.com/*"],
           "css": [
-            "/style.css"
-          ]
-          
+            "style.css"
+          ],
+          "js": ["/main.js"]
         }
     ]
 

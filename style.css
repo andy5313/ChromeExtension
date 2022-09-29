@@ -1,11 +1,60 @@
 
 
 html {
+    all:unset;
     background: white;
     display: flex;
 }
+
+h1 {
+    display:  flex;
+    flex-direction: column;
+    margin: auto;
+    content: '!! RESIST THE MATRIX !!';
+    text-align: center;
+    font-size: 100px;
+    width: 100%;
+    height: 100px;
+    padding: 15px 0;
+    /* background-image: url("https://thumbs.gfycat.com/FamousAshamedImperialeagle-size_restricted.gif");
+    background-repeat: no-repeat, repeat;
+    background-position: center; */
+} 
+
+#quote {
+    display:  flex;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    width: 75%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px 0;
+}
+
+#image  {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+#imageDiv {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#embed {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+br {
+    height: 50px;
+}
   
-html::before {
+ /* html::before {
+    display:  flex;
+    flex-direction: column;
     margin: auto;
     content: '!! RESIST THE MATRIX !!';
     text-align: center;
@@ -15,14 +64,11 @@ html::before {
     background-image: url("https://thumbs.gfycat.com/FamousAshamedImperialeagle-size_restricted.gif");
     background-repeat: no-repeat, repeat;
     background-position: center;
-}
+}  */
 
-body::before{
-    content: '!! HELLO WORLD !!';
-    font-size: 50px;
-}
-
-body {
+ /* body {
     display: none !important;
-}
+}   */
+
+
 
