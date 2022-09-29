@@ -16,7 +16,6 @@ const imageArray = [
     "https://c.tenor.com/oF0dlVPAYMAAAAAC/the-matrix-reloaded-the-matrix.gif",
     "https://c.tenor.com/ZQL4vQ4hqJYAAAAC/power-the-matrix.gif",
     "https://c.tenor.com/f8Br76UGmCIAAAAd/neo-matrix.gif",
-    "https://i.makeagif.com/media/1-03-2016/j8Iwzf.gif",
     "https://c.tenor.com/zwZlETmn3v0AAAAd/neo-agent-smith.gif"
 ]
 
@@ -47,6 +46,23 @@ var divElement = document.createElement("div");
 divElement.setAttribute("id", "quote");
 divElement.innerText = quotes[index];
 newBody.appendChild(divElement);
+
+
+var btnDiv = document.createElement("div");
+btnDiv.setAttribute("id", "btnDiv");
+
+var button = document.createElement("button");
+button.setAttribute("id",  "button");
+button.innerText = "Go Back";
+//window.history.back()
+ 
+button.addEventListener('click', function (event) {
+	window.history.back();
+}, false);
+btnDiv.appendChild(button);
+
+newBody.appendChild(btnDiv);
+console.log(btnDiv);
 
 
 var imageDiv = document.createElement("div");
