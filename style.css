@@ -6,6 +6,10 @@ html {
     display: flex;
 }
 
+body {
+    margin: auto !important;
+}
+
 h1 {
     display:  flex;
     flex-direction: column;
@@ -26,7 +30,7 @@ h1 {
     margin: auto;
     text-align: center;
     font-size: 30px;
-    width: 75%;
+    width: 78%;
     font-family: 'Courier New', Courier, monospace;
     padding: 15px 0;
 }
