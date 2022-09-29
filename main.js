@@ -3,10 +3,8 @@
 const quotes = [`"I'm trying to free your mind, Neo. But I can only show you the door. You're the one that has to walk through it." – Morpheus (The Matrix)"`, 
 `"You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind. – Morpheus (The Matrix)"`, 
 `"Neo, sooner or later you’re going to realize, just as I did, there’s a difference between knowing the path and walking the path." - Morpheus`,
-` "The urge to check Twitter or refresh Reddit becomes a nervous twitch that shatters uninterrupted time into shards too small to support the presence necessary for an intentional life. The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in T-shirts selling an addictive product to children. Because, let’s face it, checking your “likes” is the new smoking. Simply put, humans are not wired to be constantly wired. Digital minimalism definitively does not reject the innovations of the internet age, but instead rejects the way so many people currently engage with these tools." — Cal Newport`,
-`“Unfortunately, no one can be told what the Matrix is. You have to see it for yourself. This is your last chance. After this, there is no turning back. You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes. Remember, all I’m offering is the truth. Nothing more.” ― Morpheus`,
+`“This is your last chance. After this, there is no turning back. You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes. Remember, all I’m offering is the truth. Nothing more.” ― Morpheus`,
 `"The matrix is everywhere. It is all around us. It is the world that has been pulled over your eyes to blind you from the truth. A prison for your mind." - Morpheus`,
-`"I'll show these people what you don’t want them to see. A world without rules and controls, without borders or boundaries. A world where anything is possible." - Neo`
 ]
 
 const imageArray = [
@@ -24,27 +22,36 @@ const imageArray = [
 
 let index = Math.floor(Math.random() * quotes.length);
 let imageIndex = Math.floor(Math.random() * imageArray.length);
-console.log(index);
-console.log(imageIndex);
 
 var body = document.getElementsByTagName('body')[0];
 let bodyParent = body.parentNode;
 body.parentNode.removeChild(body);
 
 var newBody = document.createElement("body");
+newBody.setAttribute("id", "bodyBackground");
+console.log(newBody);
 
-var h2Element = document.createElement("h1");
-h2Element.innerText = "!! RESIST THE MATRIX !!"
-newBody.appendChild(h2Element);
+var heading = document.createElement("h1");
+heading.setAttribute("id", "heading");
+heading.innerText = "!! RESIST THE MATRIX !!"
+newBody.appendChild(heading);
+
+//background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/019/901/original/matrix-digital-background-free-video.jpg");
 
 // var imageLine = document.createElement("img");
 // imageElement.setAttribute("id", "imageLine");
 // imageElement.setAttribute("src", "https://www.tropicoco-salon.co.uk/wp-content/uploads/2019/08/line-break.jpg");
 // newBody.appendChild(imageElement);
 
+var divElement = document.createElement("div");
+divElement.setAttribute("id", "quote");
+divElement.innerText = quotes[index];
+newBody.appendChild(divElement);
+
 
 var imageDiv = document.createElement("div");
 imageDiv.setAttribute("id", "imageDiv");
+
 
 var imageElement = document.createElement("img");
 imageElement.setAttribute("id", "image");
@@ -55,17 +62,15 @@ imageDiv.appendChild(imageElement);
 newBody.appendChild(imageDiv);
 
 
-var divElement = document.createElement("div");
-divElement.setAttribute("id", "quote");
-divElement.innerText = quotes[index];
-//divElement.innerText = ` "The urge to check Twitter or refresh Reddit becomes a nervous twitch that shatters uninterrupted time into shards too small to support the presence necessary for an intentional life. The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in T-shirts selling an addictive product to children. Because, let’s face it, checking your “likes” is the new smoking. Simply put, humans are not wired to be constantly wired. Digital minimalism definitively does not reject the innovations of the internet age, but instead rejects the way so many people currently engage with these tools." — Cal Newport`;
-newBody.appendChild(divElement);
-
 var embedElement = document.createElement("EMBED");
 embedElement.setAttribute("id", "embed");
 embedElement.setAttribute("src", "https://open.spotify.com/embed/playlist/37i9dQZF1DX0wMD4IoQ5aJ?utm_source=generator")
 newBody.appendChild(embedElement);
 
+var lastQuote = document.createElement("div");
+lastQuote.setAttribute("id", "lastQuote");
+lastQuote.innerText = ` "The urge to check Twitter or refresh Reddit becomes a nervous twitch that shatters uninterrupted time into shards too small to support the presence necessary for an intentional life. The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in T-shirts selling an addictive product to children. Because, let’s face it, checking your “likes” is the new smoking. Simply put, humans are not wired to be constantly wired. Digital minimalism definitively does not reject the innovations of the internet age, but instead rejects the way so many people currently engage with these tools." — Cal Newport`;
+newBody.appendChild(lastQuote);
 
 bodyParent.appendChild(newBody);
 
