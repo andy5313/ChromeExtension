@@ -2,9 +2,9 @@
 
 const quotes = [`"I'm trying to free your mind, Neo. But I can only show you the door. You're the one that has to walk through it." – Morpheus (The Matrix)"`, 
 `"You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind. – Morpheus (The Matrix)"`, 
-`"The body cannot live without the mind – Morpheus (The Matrix)"`,
+`"Neo, sooner or later you’re going to realize, just as I did, there’s a difference between knowing the path and walking the path." - Morpheus`,
 ` "The urge to check Twitter or refresh Reddit becomes a nervous twitch that shatters uninterrupted time into shards too small to support the presence necessary for an intentional life. The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in T-shirts selling an addictive product to children. Because, let’s face it, checking your “likes” is the new smoking. Simply put, humans are not wired to be constantly wired. Digital minimalism definitively does not reject the innovations of the internet age, but instead rejects the way so many people currently engage with these tools." — Cal Newport`,
-`“This is your last chance. After this, there is no turning back. You take the blue pill – the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill – you stay in Wonderland and I show you how deep the rabbit-hole goes.” ― Morpheus`,
+`“Unfortunately, no one can be told what the Matrix is. You have to see it for yourself. This is your last chance. After this, there is no turning back. You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes. Remember, all I’m offering is the truth. Nothing more.” ― Morpheus`,
 `"The matrix is everywhere. It is all around us. It is the world that has been pulled over your eyes to blind you from the truth. A prison for your mind." - Morpheus`,
 `"I'll show these people what you don’t want them to see. A world without rules and controls, without borders or boundaries. A world where anything is possible." - Neo`
 ]
